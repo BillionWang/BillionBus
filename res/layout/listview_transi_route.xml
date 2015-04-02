@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/tvTransiRoute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="18dp"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/imgArrivedTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvTransiRoute"
+        android:layout_below="@+id/tvTransiRoute"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/track_icon_duration" />
+    
+		<TextView
+        android:id="@+id/tvArrivedTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgArrivedTime"
+        android:layout_toRightOf="@+id/imgArrivedTime"
+        android:layout_marginLeft="5dip"
+        android:text="到达"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+    
+    <ImageView
+        android:id="@+id/imgDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgArrivedTime"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/tvArrivedTime"
+        android:src="@drawable/track_icon_duration" />
+
+     <TextView
+        android:id="@+id/tvDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgDuration"
+        android:layout_marginLeft="5dip"
+        android:layout_toRightOf="@+id/imgDuration"
+        android:text="耗时" />
+     
+    <ImageView
+        android:id="@+id/imgDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imgArrivedTime"
+        android:layout_below="@+id/tvDuration"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/search_transfer_location" />
+
+    
+     <TextView
+        android:id="@+id/tvDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvArrivedTime"
+        android:layout_alignTop="@+id/imgDistance"
+        android:text="距离" />
+     
+    <ImageView
+        android:id="@+id/imgWalk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgDistance"
+        android:layout_toRightOf="@+id/tvDistance"
+        android:layout_alignLeft="@+id/imgDuration"
+        android:src="@drawable/route_detail_walk"
+         />
+
+    <TextView
+        android:id="@+id/tv_walk_lenth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvDuration"
+        android:layout_alignTop="@+id/imgWalk"
+        android:text="步行距离" />
+  
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white" >
+
+    
+    
+   <!--  <EditText
+        android:id="@+id/editTextEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/editTextStart"
+        android:layout_below="@+id/editTextStart"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape"  
+        android:hint="请输入终点"
+        android:textSize="20sp" />
+
+    
+    <EditText
+        android:id="@+id/editTextStart"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/shape"
+        android:ems="10"
+        android:textSize="20sp"
+        android:hint="请输入起点" >
+
+        <requestFocus />
+    </EditText>
+    	
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextEnd"
+        android:layout_alignRight="@+id/editTextEnd"
+        android:layout_below="@+id/editTextEnd"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/icon_station_mark"
+        android:text="查询方案"
+        android:textColor="@android:color/white" /> -->
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="161dp"
+        android:src="@drawable/icon_landing_guide_up_arrow" />
+    
+</RelativeLayout>

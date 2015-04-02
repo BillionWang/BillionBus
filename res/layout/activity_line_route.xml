@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#cccccc" >
+
+        <ImageView
+            android:id="@+id/imageViewBus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/imageViewBack"
+            android:src="@drawable/common_topbar_route_bus_pressed" />
+
+        <ImageView
+            android:id="@+id/imageViewCar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageViewBus"
+            android:layout_marginLeft="38dp"
+            android:layout_toRightOf="@+id/imageViewBus"
+            android:src="@drawable/common_topbar_route_car_normal" />
+
+        <ImageView
+            android:id="@+id/imageViewWalk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageViewCar"
+            android:layout_marginLeft="41dp"
+            android:layout_toRightOf="@+id/imageViewCar"
+            android:src="@drawable/common_topbar_route_foot_normal" />
+
+        <ImageView
+            android:id="@+id/imageViewBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/imageViewBus"
+            android:layout_marginLeft="25dp"
+            android:contentDescription="back"
+            android:src="@drawable/mini_webview_back" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout2" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/route_crosscity_detail_startpoint" />
+
+        <TextView
+            android:id="@+id/textViewStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="我的位置"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView1"
+            android:layout_below="@+id/imageView1"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:src="@drawable/route_crosscity_detail_endpoint" />
+
+        <TextView
+            android:id="@+id/textViewEnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewStart"
+            android:layout_alignTop="@+id/imageView2"
+            android:hint="请输入终点.."
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvStartTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textViewEnd"
+            android:text="出发时间"
+            android:visibility="gone"        
+             />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="wrap_content"
+        android:layout_height="354dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_above="@+id/linearLayoutBottom"
+         >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="20dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="bottom" >
+
+        <ImageView
+            android:id="@+id/imgLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="15dip"
+            android:src="@drawable/icon_location" />
+
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="定位" />
+    </LinearLayout>
+
+</RelativeLayout>

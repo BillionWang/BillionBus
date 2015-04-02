@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="40dip"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/shape"
+        android:drawableLeft="@drawable/search"
+        android:ems="10"
+        android:hint="请输入站点名"
+        android:padding="5dp"
+        android:textSize="20sp" />
+   <!--  <WebView
+        android:id="@+id/webView1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="175dp"
+        android:visibility="visible" />
+
+    <FrameLayout
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_below="@+id/editText1" >
+
+      
+
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible">
+        </ListView>
+
+        <ProgressBar
+            android:id="@+id/progressBar1"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+        
+    </FrameLayout> -->
+
+      <Button
+          android:id="@+id/button1"
+          android:layout_width="220dp"
+          android:layout_height="40dp"
+          android:layout_alignLeft="@+id/editText1"
+          android:layout_below="@+id/editText1"
+          android:layout_marginTop="38dp"
+          android:background="@drawable/icon_station_mark"
+          android:text="查询站点"
+          android:textColor="@android:color/white" />
+
+</RelativeLayout>

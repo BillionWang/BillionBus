@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/line_detail_top"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        
+        <ImageView 
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/icon_bus"
+            />
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="王百万"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            />
+        
+    </LinearLayout>
+    	
+    
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:gravity="center"
+           android:orientation="horizontal">
+           
+           <ImageView 
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:src="@drawable/map_room_1"
+               />
+           
+           
+           </LinearLayout>
+    
+    
+</RelativeLayout>

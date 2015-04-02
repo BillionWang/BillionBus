@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">王百万公交车</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">设置</string>
+	<string name="return_line">返程</string>
+	<string name="action_more">更多</string>
+	<string name="about">关于</string>
+	<string name="line">线路</string>
+</resources>
